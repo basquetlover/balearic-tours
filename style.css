@@ -1,0 +1,1317 @@
+/*
+Codigo Colores
+#031d34 - Dark Blue
+#faf6d7 - Light Yellow
+#f8a745 - Orange
+#96c4ce - Light Blue
+#546368 - Gris claro
+*/
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #faf6d7;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color:#f8a745;
+  /* background: linear-gradient(0deg, #faf6d7, #f8a745, #f8a745, #f8a745, #f8a745, #f8a745); */
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  position: relative;
+  top: 0%;
+  lef: 0;    
+  height: max-content;
+  width: 100%;
+  
+}
+footer {
+  position: relative;
+  top: 2%;
+  left: 0;
+  background-color:#f8a745;
+  /* background: linear-gradient(0deg, #faf6d7, #f8a745, #f8a745, #f8a745, #f8a745, #f8a745); */
+  height: 25em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.horizontal-line {
+  border: none;
+  border-top: 2px solid #031d34;
+  width: 90%; /* Establece el ancho al 90% del contenedor */
+  margin: 20px auto; /* Alinea horizontalmente y agrega margen superior e inferior */
+}
+
+/*boton menu*/
+
+.contenedor{
+  position: relative;
+  top: 0%;
+  left: -27%;
+  margin-left: 2%;
+  height: 50%;
+  aspect-ratio: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  transform: scale(.5);
+  cursor: pointer;
+}
+
+.hamburguesa{
+  height: 10px;
+  width: 100%;
+  background-color: #2e3436;
+  border-radius: 3px;
+  transition: 1s;
+}
+
+.hamburguesa:after,
+.hamburguesa:before,
+.hamburguesa{
+  position: absolute;
+  width: 100%;
+  content: "";
+  background-color:#031d34;
+  transition: 1s;
+}
+
+.hamburguesa:after{
+  height: 100%;
+  top: 25px;
+  border-radius: 3px;
+}
+
+.hamburguesa:before{
+  height: 100%;
+  top: -25px;
+  border-radius: 3px;
+}
+
+ .hamburguesa.active{
+    transform: rotateZ(45deg);
+    transition: 1s;
+}
+
+  .hamburguesa.active:after {
+    top: 0px;
+    transform: rotateZ(0deg);
+    transition: 1s;
+}
+
+  .hamburguesa.active:before {
+    top: 0px;
+    transform: rotateZ(90deg);
+    transition: 1s;
+}
+/*Menu*/
+.menu {
+  position: relative;
+  height: 30%;
+  width: 20%;
+  color: #031d34;
+  /* background-color: cyan; */
+  left: -25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.nave {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: 30%;
+  width: 20%;
+  /* background-color: lime; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  /* transform: scale(0);
+  transition: 0.8s; */
+  cursor: default;
+  pointer-events: none;
+}
+.nave.active {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: 30%;
+  width: 20%;
+  /* background-color: cyan; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+
+}
+.nave li{
+  top: -2%;
+  left: -100%;
+  margin-left: -70px;
+  margin-right: 35px;
+
+  /* background-color: pink; */
+  transition: 1s;
+}
+.nave li a{
+  /* background-color: red; */
+  color: transparent;
+  font-size: 1.1vw;
+  transition: 1s;
+}
+.nave.active li{
+  margin-left: 38px;
+  margin-right: 0px;
+  transition: 1s;
+}
+.nave.active li a{
+  font-size: 1.1vw;
+  color: #031d34;
+  transition: 0.4s;
+}
+.nave.active li a:hover{
+  color: #faf6d7;
+  transition: 0.5s;
+}
+/*Titulo + logo*/
+
+.titulo {
+  color: #031d34 ;
+  background-color: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 20%;
+  left: -12%;
+  
+ 
+}
+.logo {
+  height: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.logo img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.titulo-letras {
+  font-family: 'Croissant One', serif;
+  font-size: 2vw; 
+  overflow: hidden;
+  color: #031d34 ;
+  text-decoration: none;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+a {
+  text-decoration: none;
+}
+
+
+/*Info main index*/
+.index-description {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  color: #031d34;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.index-description-titulo {
+  /* background-color: lime; */
+  font-family: 'Lexend', sans-serif;
+}
+.index-description-texto {
+  width: 80%;
+  /* background-color: cyan; */
+  font-family: 'Prompt', sans-serif;
+
+}
+
+/*copyright*/
+.copy {
+  height: 40px;
+  width: 100%;
+  background-color: #031d34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.copy p{
+  color: #faf6d7;
+  font-size: 20px;
+}
+.copy a{
+  color: #faf6d7;
+  text-decoration: none;
+  margin-left: 1%;
+}
+.copy a:hover{
+  color: #f8a745;
+  text-decoration: none;
+  margin-left: 1%;
+}
+
+/*Imagen footer*/
+.logo-pie {
+  position: relative;
+  top: 3%;
+  margin: 2%;
+  height: 14em;
+  aspect-ratio: 1;
+  color: #031d34;
+  font-family: 'Prompt', sans-serif;
+}
+.logo-pie img{
+  height: 100%;
+  width: 100%;
+}
+
+/*info-footer*/
+.info-footer{
+  position: relative;
+  left: 2%;
+  height: 90%;
+  width: 75%;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Contacto footer*/
+.contacto-pie{
+  position: relative;
+  top: 3%;
+  margin: 2%;
+  /* background-color: red; */
+  height: 60%;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #031d34;
+}
+.contacto-pie-titulo{
+  font-family: 'Lexend', sans-serif;
+  /* background-color: #4da8a8; */
+}
+.contacto-pie-texto{
+  font-family: 'Prompt', sans-serif;
+  height: max-content;
+  /* background-color: lime; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Islas footer*/
+.isla-pie{
+  position: relative;
+  top: 3%;
+  margin: 2%;
+  /* background-color: red; */
+  height: 60%;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #031d34;
+}
+.isla-pie-titulo{
+  font-family: 'Lexend', sans-serif;
+  /* background-color: #4da8a8; */
+}
+.isla-pie-texto{
+  margin-bottom: -2%;
+  font-family: 'Prompt', sans-serif;
+  height: max-content;
+  /* background-color: lime; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Guias footer*/
+.guias-pie{
+  position: relative;
+  top: 3%;
+  margin: 2%;
+  /* background-color: blue; */
+  height: 60%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #031d34;
+}
+.guias-pie-titulo{
+  font-family: 'Lexend', sans-serif;
+  /* background-color: #4da8a8; */
+}
+.guias-pie-texto{
+  margin-bottom: -2%;
+  font-family: 'Prompt', sans-serif;
+  height: max-content;
+  witdh: max-content;
+  /* background-color: lime; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Fotos de perfil footer*/
+.perfil-pie{
+  position: relative;
+  top: 3%;
+  margin: 2%;
+  /* background-color: blue; */
+  height: 60%;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #031d34;
+}
+.perfil-pie-titulo{
+  font-family: 'Lexend', sans-serif;
+  /* background-color: #4da8a8; */
+}
+.perfil-pie-texto{
+  margin-bottom: -2%;
+  font-family: 'Prompt', sans-serif;
+  height: max-content;
+  witdh: max-content;
+  /* background-color: lime; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.perfil-pie-texto img{
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+}
+
+/*Tiutulo "Tours" index main*/
+.index-select-tours-titulo{
+  /* background-color: red; */
+  height: max-content;
+  width: 100%;
+  font-family: 'Lexend', sans-serif;
+  color: #031d34;
+}
+
+/*Mallorca index main*/
+.index-tours-mallorca {
+  /* background-color: red; */
+  height: 18em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.index-mallorca-texto{
+  font-family: 'Lexend', sans-serif;
+  color: #031d34;
+  /* background-color: red; */
+  width: 50%;
+  height: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #546368;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton-select-mallorca{
+  width: 10em;
+  height: 2em;
+  background-color: #f8a745;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.boton-select-mallorca:hover {
+  background-color: #031d34;
+  color: #f8a745;
+  transition: 0.5s;
+}
+.index-mallorca-img {
+  margin-top: 1%;
+  margin-right: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.index-mallorca-img img {
+  height: 100%;
+  width: 100%;
+}
+.index-mallorca-img ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+  margin: 0;
+}
+.index-mallorca-img li {
+  width: 25%;
+  list-style: none;
+  display: none;
+}
+.index-mallorca-img li.active {
+  display: block;
+}
+
+/*Menorca index main*/
+.index-tours-menorca {
+  /* background-color: red; */
+  height: 18em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.index-menorca-texto{
+  font-family: 'Lexend', sans-serif;
+  color: #031d34;
+  /* background-color: red; */
+  width: 50%;
+  height: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #546368;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton-select-menorca{
+  width: 10em;
+  height: 2em;
+  background-color: #f8a745;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.boton-select-menorca:hover {
+  background-color: #031d34;
+  color: #f8a745;
+  transition: 0.5s;
+}
+.index-menorca-img {
+  margin-top: 1%;
+  margin-left: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.index-menorca-img img {
+  height: 100%;
+  width: 100%;
+}
+.index-menorca-img ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+  margin: 0;
+}
+.index-menorca-img li {
+  width: 25%;
+  list-style: none;
+  display: none;
+}
+.index-menorca-img li.active {
+  display: block;
+}
+
+/*Ibiza index main*/
+.index-tours-ibiza {
+  /* background-color: red; */
+  height: 24em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.index-ibiza-texto{
+  font-family: 'Lexend', sans-serif;
+  color: #031d34;
+  /* background-color: red; */
+  width: 50%;
+  height: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #546368;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton-select-ibiza{
+  width: 10em;
+  height: 2em;
+  background-color: #f8a745;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.boton-select-ibiza:hover {
+  background-color: #031d34;
+  color: #f8a745;
+  transition: 0.5s;
+}
+.index-ibiza-img {
+  margin-top: 1%;
+  margin-right: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.index-ibiza-img img {
+  height: 100%;
+  width: 100%;
+}
+.index-ibiza-img ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+  margin: 0;
+}
+.index-ibiza-img li {
+  width: 25%;
+  list-style: none;
+  display: none;
+}
+.index-ibiza-img li.active {
+  display: block;
+}
+
+/*Palma Tour - Mallorca main*/
+.index-palma-mallorca {
+  /* background-color: red; */
+  height: 20em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.index-palma-texto{
+  font-family: 'Lexend', sans-serif;
+  color: #031d34;
+  /* background-color: red; */
+  width: 50%;
+  height: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #546368;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton-select-palma{
+  width: 10em;
+  height: 2em;
+  background-color: #f8a745;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.boton-select-palma:hover {
+  background-color: #031d34;
+  color: #f8a745;
+  transition: 0.5s;
+}
+.index-palma-img {
+  margin-top: 1%;
+  margin-right: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.index-palma-img img {
+  height: 100%;
+  width: 100%;
+}
+.index-palma-img ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+  margin: 0;
+}
+.index-palma-img li {
+  width: 25%;
+  list-style: none;
+  display: none;
+}
+.index-palma-img li.active {
+  display: block;
+}
+
+/*Tramuntana Tour - Mallorca main*/
+.index-tramuntana-mallorca {
+  /* background-color: red; */
+  height: 20em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.index-tramuntana-texto{
+  font-family: 'Lexend', sans-serif;
+  color: #031d34;
+  /* background-color: red; */
+  width: 50%;
+  height: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #546368;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton-select-coming{
+  width: 10em;
+  height: 2em;
+  background-color: #f8a745;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton-select-coming:hover{
+  background-color: #b30000;
+  color: #faf6d7;
+}
+.index-tramuntana-img {
+  margin-top: 1%;
+  margin-left: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.index-tramuntana-img img {
+  height: 100%;
+  width: 100%;
+}
+.index-tramuntana-img ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+  margin: 0;
+}
+.index-tramuntana-img li {
+  width: 25%;
+  list-style: none;
+  display: none;
+}
+.index-tramuntana-img li.active {
+  display: block;
+}
+.index-tramuntana-img2 {
+  margin-top: 1%;
+  margin-right: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.index-tramuntana-img2 img {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*Descripcion main mallorca*/
+.mallorca-description {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  color: #031d34;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.mallorca-description-titulo {
+  /* background-color: lime; */
+  font-family: 'Lexend', sans-serif;
+}
+.mallorca-description-texto {
+  width: 80%;
+  /* background-color: cyan; */
+  font-family: 'Prompt', sans-serif;
+
+}
+
+/*Menorca*/
+/*Ciutadella tour*/
+.main-ciutadella-menorca {
+  /* background-color: red; */
+  height: 20em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main-ciutadella-texto{
+  font-family: 'Lexend', sans-serif;
+  color: #031d34;
+  /* background-color: red; */
+  width: 50%;
+  height: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #546368;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-ciutadella-img {
+  margin-top: 1%;
+  margin-right: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.main-ciutadella-img img {
+  height: 100%;
+  width: 100%;
+}
+.main-ciutadella-img2 {
+  margin-top: 1%;
+  margin-left: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.main-ciutadella-img2 img {
+  height: 100%;
+  width: 100%;
+}
+
+/*Mao Tour*/
+.main-mao-menorca {
+  /* background-color: red; */
+  height: 20em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main-mao-texto{
+  font-family: 'Lexend', sans-serif;
+  color: #031d34;
+  /* background-color: red; */
+  width: 50%;
+  height: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: #546368;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-mao-img {
+  margin-top: 1%;
+  margin-left: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.main-mao-img img {
+  height: 100%;
+  width: 100%;
+}
+.main-mao-img2 {
+  margin-top: 1%;
+  margin-right: 4%;
+  background-color: #f8a745;
+  width: 30%;
+  height: 95%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.main-mao-img2 img {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*Contacto main info*/
+.contacto-main-info{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+.iconos-contacto{
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  
+}
+.icono{
+  margin: 2%;
+}
+.contacto-main-telefono{
+  width: 15%;
+  height: 18em;
+  background-color: #f8a745;
+  color: #031d34;
+  font-family: 'Prompt', sans-serif;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.contacto-main-direccion{
+  width: 17%;
+  height: 18em;
+  background-color: #f8a745;
+  color: #031d34;
+  font-family: 'Prompt', sans-serif;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.simbolo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  width: 95%;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-size: 0.8rem;
+}
+
+
+/*Reserva*/
+.titulo-reserva {
+    color: #031d34 ;
+    background-color: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 20%;
+    /* left: -12%; */
+}
+.logo-reserva {
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.logo-reserva img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+.titulo-letras-reserva {
+    font-family: 'Croissant One', serif;
+    font-size: 1.8vw; 
+    overflow: hidden;
+    color: #031d34 ;
+    text-decoration: none;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+a {
+    text-decoration: none;
+}
+
+.titulo-main-reserva{
+  height: max-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #031d34;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1vw;
+}
+
+.form{
+  height: max-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Prompt', sans-serif;
+  color: #031d34;
+}
+.form-contacto{
+  height: max-content;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.form-mas-info{
+  height: 10em;
+  width: 40em;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f8a745;;
+  border-radius: 25px;
+  margin: 1%;
+}
+.form-mas-info label{
+    font-size: 1.2vw;
+    color: #031d34;
+  margin: 1%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+.form-mas-info textarea{
+  margin: 1%;
+  background-color: #faf6d7;
+  border: none;
+  border-radius: 25px;
+  height: 8em;
+  width: 95%;
+  display: block;
+}
+.nombre-div{
+  height: 10em;
+  width: 20em;
+  background-color: #f8a745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  flex-direction: column;
+  margin: 1%;
+}
+.nombre-div label{
+  font-size: 1vw;
+  color: #031d34;
+}
+
+select{
+  margin: 1%;
+  background-color: #faf6d7;
+  border: none;
+  border-radius: 25px;
+  width: 14em;
+  height: 2em;
+   display: block;
+}
+.form-contacto input{
+  margin: 1%;
+  background-color: #faf6d7;
+  border: none;
+  border-radius: 25px;
+  height: 2em;
+  width: 14em;
+   display: block;
+}
+.name{
+  font-size: 1vw;
+  color: #031d34;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+}
+.apellido{
+  font-size: 1vw;
+  color: #031d34;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.contacto-div{
+  height: 10em;
+  width: 20em;
+  background-color: #f8a745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  flex-direction: column;
+  margin: 1%;
+}
+.contacto-div label{
+  font-size: 1vw;
+  color: #031d34;
+}
+.contacto-div input{
+  margin: 1%;
+  background-color: #faf6d7;
+  border: none;
+  border-radius: 25px;
+  height: 2em;
+   display: block;
+}
+.telefono{
+  font-size: 1vw;
+  color: #031d34;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+}
+.email{
+  font-size: 1vw;
+  color: #031d34;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.pago-seguro{
+  position: relative;
+  top: 3%;
+  margin: 2%;
+  /* background-color: blue; */
+  height: 40%;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #031d34;
+}
+.pago-seguro-titulo{
+  font-family: 'Lexend', sans-serif;
+  font-size: 1vw;
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+}
+.pago-seguro-img{
+ 
+  height: 60%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.pago-seguro-img-logos{
+  margin: 1%;
+  
+  height: 4em;
+  width: 4em;
+  border-radius: 10px;
+}
+.pago-seguro-img-logos img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.reserva-header{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color:#f8a745;
+  height: 10em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo-reserva{
+  left: -28%;
+}
+.titulo-tour-reserva{
+  position: relative;
+  left: 28%;
+  font-family: 'Lexend', sans-serif;
+  font-size: 2vw;
+  color: #031d34;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-reserva-completada {
+  width: 10em;
+  height: 2em;
+  background-color: #f8a745;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  color: #031d34; /* Agregamos color de texto para que sea visible */
+}
+
+.boton-reserva-completada:hover {
+  background-color: #031d34;
+  color: #f8a745;
+  transition: 0.5s;
+}
+
+/*Imagenes Palma Tour*/
+.imagenes-palma-tour{
+  margin-top: 2%;
+  height: 24em;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-palma-tour{
+  position: relative;
+  height: 100%;
+  width: 30%;
+
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #031d34;
+  font-size: 1vw;
+}
+.imagen-palma-tour img{
+  height: 80%;
+  width: 80%;
+  border-radius: 20px;
+}
+.main-boton-reserva{
+  position: relative;
+  height: max-content;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  color: #031d34; /* Agregamos color de texto para que sea visible */
+}
+
+.boton-reserva{
+  margin-left: 2%;
+  width: 10em;
+  height: 2em;
+  background-color: #f8a745;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.boton-reserva:hover {
+  background-color: #031d34;
+  color: #f8a745;
+  transition: 0.5s;
+}
